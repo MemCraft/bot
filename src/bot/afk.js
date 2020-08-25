@@ -10,8 +10,8 @@ const username = process.argv[2];
 const password = process.argv[3];
 
 const bot = mineflayer.createBot({
-	host: config.server_name,
-	port: config.server_port,
+	host: config.server.name,
+	port: config.server.port,
 	username: username,
 	version: false
 });
