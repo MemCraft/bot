@@ -46,7 +46,7 @@ function registerChatBot(mcbot = null, tgbot = null) {
 		if (ingoreList.includes(username)) {
 			return;
 		}
-		
+
 		console.log(`<${username}> ${message}`);
 		tgbot.forward_chat(`<${username}> ${message}`);
 	})
